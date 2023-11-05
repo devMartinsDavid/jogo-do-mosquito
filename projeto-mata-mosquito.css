@@ -1,6 +1,9 @@
 html{
 	cursor: url('imagem/mata-mosquito.png') 30 30, auto;
 }
+html a { 
+	cursor: url('imagem/mata-mosquito.png') 30 30, auto;
+}
 body{
 	height: 100vh;
 	background-image:url('imagem/bg.jpg');
