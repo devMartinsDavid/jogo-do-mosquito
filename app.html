@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jogo pelo Js</title>
+	<link rel="stylesheet" type="text/css" href="projeto-mata-mosquito.css">
+	<script src="jogo.js"></script>
+	
+</head>
+<body onresize="ajustaTamanhoPalcoJogo()">
+
+	<div class="painel">
+		<div class="vidas">
+			<img id="v1" src="imagem/coracao_cheio.png">
+			<img id="v2" src="imagem/coracao_cheio.png">
+			<img id="v3" src="imagem/coracao_cheio.png">
+		</div>
+		<div class="cronometro">
+			tempo restante: <span id="cronometro"></span>
+		</div>
+	</div>
+
+	<!-- remover a imagem pois não tem mais necessidade
+	<img src="imagem/mosquito.png" class="mosquito1"> -->
+
+	<script>
+
+		//duplicando o tempo aqui para ficar dinâmico e cravar o tempo certinho...
+		document.getElementById('cronometro').innerHTML = tempo
+		//posicaoRandomica() foi pra teste, pra ver o funcionamento do mosquito
+
+		var criaMosquito = setInterval(function(){
+			posicaoRandomica()
+		}, criaMosquitoTempo)
+		//INCLUSÃO DO MOSQUITO
+	</script>
+	
+
+
+</body>
+</html>
